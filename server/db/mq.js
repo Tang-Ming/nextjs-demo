@@ -1,5 +1,5 @@
-import SMQ from "amqplib";
-
+// import SMQ from "amqplib";
+const SMQ=require('amqplib')
 const MQConfig = {
   hostname: "127.0.0.1",
   username: "admin",

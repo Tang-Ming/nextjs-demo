@@ -1,7 +1,7 @@
 const express = require("express");
 const next = require("next");
 require("./task");
-require("./message");
+// require("./message");
 
 const server = express();
 const port = parseInt(process.env.PORT, 10) || 8082;
@@ -15,9 +15,10 @@ server.set("x-powered-by", dev);
 app
   .prepare()
   .then(() => {
+    
     //自定义api
     server.get("/api_test", (req, res) => {
-      res.json({ code: 1, data: "ok" });
+      res.json({ code: 1, data: "okkkkk" });
     });
     // 自定义渲染内容
     server.get("/t/:id", (req, res) => {
